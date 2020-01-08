@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-Wrap: wrap
+}
+.text-field{
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 200
+}
+.header{
+    margin: right 45px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.fab{
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline;
+}

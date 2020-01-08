@@ -1,0 +1,18 @@
+ul.pl{
+    list-style-type: none;
+}
+li.ph{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+}
+li.pn{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+li.tu{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
