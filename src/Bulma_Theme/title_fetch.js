@@ -7,10 +7,7 @@ function TitleBulma(props){
                 <div class="hero-head">
                     <header class="navbar">
                     <div class="container">
-                        <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
-                        </a>
+                        <div class="navbar-brand">                
                         <span class="navbar-burger burger" data-target="navbarMenuHeroC">
                             <span></span>
                             <span></span>
@@ -19,22 +16,22 @@ function TitleBulma(props){
                         </div>
                         <div id="navbarMenuHeroC" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-active">
-                            Home
+                            <a class="navbar-item">
+                            GitHub
                             </a>
                             <a class="navbar-item">
-                            Examples
+                            Linkdin
                             </a>
                             <a class="navbar-item">
-                            Documentation
+                            Contact 
                             </a>
                             <span class="navbar-item">
-                            <a class="button is-success is-inverted">
+                            {/* <a class="button is-success is-inverted">
                                 <span class="icon">
                                 <i class="fab fa-github"></i>
                                 </span>
                                 <span>Download</span>
-                            </a>
+                            </a> */}
                             </span>
                         </div>
                         </div>
@@ -45,10 +42,10 @@ function TitleBulma(props){
                 <div class="hero-body">
                     <div class="container has-text-centered">
                     <h1 class="title">
-                        Patrick Boii
+                        Patrick Morgan
                     </h1>
                     <h2 class="subtitle">
-                        Subtitle
+                        Full-Stack Javascript Developer
                     </h2>
                     </div>
                 </div>
@@ -58,11 +55,11 @@ function TitleBulma(props){
                     <div class="container">
                         <ul>
                         <li><a>Bio</a></li>
-                        <li><a>Modifiers</a></li>
-                        <li><a>Grid</a></li>
-                        <li><a>Elements</a></li>
-                        <li><a>Components</a></li>
-                        <li><a>Layout</a></li>
+                        <li><a>Education</a></li>
+                        <li><a>Skills</a></li>
+                        <li><a>Projects</a></li>
+                        {/* <li><a>Components</a></li>
+                        <li><a>Layout</a></li> */}
                         </ul>
                     </div>
                     </nav>

@@ -6,7 +6,7 @@ class ProjectsPOST extends React.Component{
         this.state = {
             project_name: " ",
             technologies_used: " ",
-            visible: true
+            visible: false
         }
 this.onChangeName = this.onChangeName.bind(this);
 this.onChangeTech = this.onChangeTech.bind(this);

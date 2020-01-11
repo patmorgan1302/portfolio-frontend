@@ -2,8 +2,8 @@ import React from 'react';
 import TitleBulma from './Bulma_Theme/title_fetch';
 import Bio from './Routes/bio';
 import Education from './Routes/education';
-import SkillsList from './Routes/skills_list';
-import Projects from './Routes/projects';
+import SkillsList from './Routes/Skills/skills_list';
+import Projects from './Routes/projects_list';
 
 // let focusedUser: ''
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './skillsPOST.css'
 
 class SkillsPOST extends React.Component{
     constructor(props){
@@ -7,7 +6,7 @@ class SkillsPOST extends React.Component{
         this.state = {
             skill_name: " ",
             skill_description: " ",
-            visible: true
+            visible: false
         }
 this.onChangeName = this.onChangeName.bind(this);
 this.onChangeDescription = this.onChangeDescription.bind(this);
@@ -23,7 +22,7 @@ onChangeDescription(e){
 }
 
 handleSubmit(e){
-    e.preventDefault(); 
+    // e.preventDefault(); 
     fetch('http://localhost:3000/skills', {
         method: 'POST',
         headers: {
@@ -31,12 +30,15 @@ handleSubmit(e){
             'accept': 'application/json'
         },
         body: JSON.stringify(this.state)
+        
     })
     .then(res => {
         return res.json();
     })
     .then()
     .catch(err => console.error(err));
+    e.preventDefault(); 
+
 }
 
 showhideHandler(e){

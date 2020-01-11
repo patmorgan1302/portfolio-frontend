@@ -1,12 +1,14 @@
 import React from 'react';
+// import SkillsPOST from './skills_POST';
+// import SkillsDELETE from './skills_DELETE';
+import SkillInspect from './skill_inspect';
 import SkillsPOST from './skills_POST';
-import SkillsDELETE from './skills_DELETE';
 
 const URL = 'http://localhost:3000/skills';
 
 class SkillsList extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
       this.state = {
         skills: [],
 }}
@@ -31,14 +33,15 @@ render(){
   const{skills} = this.state;
     return(
         <div class="skills-list">
-                {skills.map(skill => (
-                    <div key={skill}>
-                    <div class="sn">{skill.skill_name} </div>
-                    <div class="sd">{skill.skill_description}</div>
-                    <SkillsDELETE />
-            </div>))}
-            <SkillsPOST />
-      </div>
-)}}
+          <div class="box">
+            {skills.map(skill => (
+              <div key={skill}>
+                <div>
+                  <SkillInspect skillname = {skill.skill_name} skilldescription = {skill.skill_description} />
+                </div>
+              </div>))}
+            </div>
+          <SkillsPOST />
+        </div>)}}
 
 export default SkillsList;

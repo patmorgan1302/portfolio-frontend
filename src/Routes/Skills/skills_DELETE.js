@@ -4,8 +4,7 @@ class SkillsDELETE extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            _id: " ",
-            visible: true
+            _id: [ ],
         }
 
 this.handleSubmit = this.handleSubmit.bind(this);
@@ -13,13 +12,13 @@ this.handleSubmit = this.handleSubmit.bind(this);
     
 handleSubmit(e){
     e.preventDefault(); 
-    fetch('http://localhost:3000/skills', {
+    fetch('http://localhost:3000/skills/_id', {
         method: 'DELETE',
         headers: {
             'content-type': 'application/json',
             'accept': 'application/json'
         },
-        body: JSON.stringify(this.state)
+        body: JSON.stringify(this.state._id)
     })
     .then(res => {
         return res.json();
@@ -41,15 +40,8 @@ handleClick(){
 
 render(){
     return(
-        <div>
-            <button onClick={()=>this.handleClick()} class="button is-primary">Add</button>
-                {this.state.visible ? 
-                    <div>
-                        <div>
-                            <button class="button" onClick={this.handleSubmit}>Delete</button>
-                        </div>
-                    </div>
-                    :null}
-        </div>
+            <div>
+                <button class="button" onClick={this.handleSubmit}>Delete</button>
+            </div>
 )}}
 export default SkillsDELETE;
