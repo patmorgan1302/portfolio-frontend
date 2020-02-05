@@ -1,7 +1,7 @@
 import React from 'react';
 import TitleBulma from './Bulma_Theme/title_fetch';
-import Bio from './Routes/bio';
-import Education from './Routes/education';
+import Bio from './Routes/Bio/bio';
+import EducationList from './Routes/Education/education_list';
 import SkillsList from './Routes/Skills/skills_list';
 import Projects from './Routes/projects_list';
 
@@ -25,7 +25,7 @@ class App extends React.Component{
                 <div class="container">
                   <h1 class="title">Eduction</h1>
                   <h2 class="subtitle">
-                    <Education />
+                    <EducationList />
                   </h2>
                 </div>
               </section>

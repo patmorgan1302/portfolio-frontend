@@ -1,8 +1,9 @@
 import React from 'react';
+import EducationInpsect from './education_inspect';
 
 const URL = 'http://localhost:3000/education';
 
-class Education extends React.Component{
+class EducationList extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -35,11 +36,12 @@ render(){
       <ul class="el">
               {educations.map(education => (
                 <div key={education}>
-                <div class="sn">{education.school_name} </div>
-                <div class="cos">{education.course_of_study}</div>
+                <div class="box">
+                  <EducationInpsect school_name = {education.school_name} course_of_study = {education.course_of_study} />
+                </div>
             </div>))}
         </ul>
 )}}
 
 
-export default Education;
+export default EducationList;

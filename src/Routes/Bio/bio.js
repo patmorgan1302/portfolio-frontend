@@ -32,7 +32,9 @@ class Bio extends React.Component{
             <ul class="bl">
                 {bios.map(bio => (
                     <li key={bio}>
-                    <div class="bio">{bio.bio}</div>
+                    <div class="box">
+                      <div class="bio">{bio.bio}</div>
+                    </div>
             </li>))}
         </ul>
     )}}
