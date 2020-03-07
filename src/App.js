@@ -1,11 +1,9 @@
 import React from 'react';
 import TitleBulma from './Bulma_Theme/title_fetch';
-import Bio from './Routes/Bio/bio';
-import EducationList from './Routes/Education/education_list';
-import SkillsList from './Routes/Skills/skills_list';
-import Projects from './Routes/projects_list';
-
-// let focusedUser: ''
+// import Bio from './Components/Bio/bio';
+import EducationList from './Components/Education/education_list'
+import SkillsList from './Components/Skills/skills_list';
+import Projects from './Components/Projects/projects_list';
 
 
 class App extends React.Component{
@@ -17,7 +15,7 @@ class App extends React.Component{
                 <div class="container">
                   <h1 class="title">Bio</h1>
                   <h2 class="subtitle">
-                    <Bio />
+                    {/* <Bio /> */}
                   </h2>
                 </div>
               </section>

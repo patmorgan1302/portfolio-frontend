@@ -22,7 +22,7 @@ fetchedData(){
   .then(
     (result) => {
       this.setState({
-        skills: result
+        skillio : result
     });
 })
   .catch(err => console.error(err));
@@ -36,8 +36,12 @@ render(){
           <div class="box">
             {skills.map(skill => (
               <div key={skill}>
-                <div>
-                  <SkillInspect skillname = {skill.skill_name} skilldescription = {skill.skill_description} />
+                <div className="skill-list-item">
+                  <SkillInspect 
+                  skillname={skill.skill_name} 
+                  skilldescription={skill.skill_description}
+                  deletebutton={skill._id}
+                  />
                 </div>
               </div>))}
             </div>

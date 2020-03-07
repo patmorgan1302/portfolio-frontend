@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillsDELETE from './skills_DELETE';
+// import SkillsDELETE from './skills_DELETE';
 import { Button } from 'reactstrap';
 
 const SkillInspect = (props) => {
@@ -17,8 +17,7 @@ const SkillInspect = (props) => {
                         </div>
                     </div>
                 </article>
-        <Button>Edit</Button> 
-        <SkillsDELETE class="button is-danger"/>
+            <button>{props.deletebutton}</button>
         </div>
     </div>)}
 
